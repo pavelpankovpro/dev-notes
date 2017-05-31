@@ -49,7 +49,7 @@ docker-compose stop [service_name]
 docker-compose rm -fv [service_name]
 ```
 
-ssh to python web service
+ssh to container
 ```
-docker exec -ti web /bin/bash
+docker exec -ti [service_name] /bin/bash
 ```
