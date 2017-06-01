@@ -17,6 +17,11 @@ docker-compose start # Starts existing containers for a service.
 docker-compose down # Stops containers and removes containers, networks, volumes, and images created by up
 docker-compose stop # Stops running containers without removing them. They can be started again with docker-compose start
 ```
+Deploying commands
+```
+docker-compose build web # This will first rebuild the image for web and then stop, destroy, and recreate just the web service
+docker-compose up --no-deps -d web # The --no-deps flag prevents Compose from also recreating any services which web depends on
+```
 
 Docker commands
 
