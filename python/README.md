@@ -1,3 +1,11 @@
+# Directory and file manipulation
+
+Check if dir exists and create it if not
+```
+if not os.path.exists(dir):
+  os.makedirs(dir)
+```
+
 # Logging
 
 Attach handler and output logging to a file
