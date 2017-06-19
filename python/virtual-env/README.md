@@ -3,10 +3,8 @@ To install virtualenv via pip
 pip3 install virtualenv
 ```
 
-Note that virtualenv installs to the python3 directory. For me it's:
-```
-/usr/local/share/python3/virtualenv
-```
+Note that virtualenv installs to the python3 directory. For me it's: `/usr/local/share/python3/virtualenv`
+
 
 Create a virtualenvs directory to store all virtual environments
 ```
