@@ -16,6 +16,11 @@ Set pipeline
 fly -t target_name set-pipeline --config pipeline.yml --pipeline pipeline_name
 ```
 
+Set pipeline and use credentials file
+```
+fly -t target_name set-pipeline --config pipeline.yml --pipeline pipeline_name --load-vars-from credentials.yml
+```
+
 Delete pipeline
 ```
 fly destroy-pipeline -t target_name --pipeline pipeline_name
