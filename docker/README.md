@@ -24,6 +24,17 @@ docker-compose up --no-deps -d web # The --no-deps flag prevents Compose from al
 ```
 
 Docker commands
+```
+docker build -t tag_name:version path/to/Dockerfile
+docker build -t localhost:5050/image_name:version path/to/Dockerfile # if we use local docker repository
+docker image pull ubuntu:latest
+dokcer image push tag_name:version
+docker image remove tag_name:version
+```
+Note```
+
+
+Docker containers and volumes
 
 https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
 
