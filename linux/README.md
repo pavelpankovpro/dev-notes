@@ -14,3 +14,8 @@ nohup command-with-options &
 ```bash
 set -ex
 ```
+
+Delete files in a directory older than 7 days
+``` bash
+find /path/to/files/* -mtime +7 -exec rm {} \;
+```
