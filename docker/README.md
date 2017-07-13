@@ -30,6 +30,7 @@ docker build -t localhost:5050/image_name:version path/to/Dockerfile # if we use
 docker image pull ubuntu:latest
 dokcer image push tag_name:version
 docker image remove tag_name:version
+docker logs container_name # see container log
 ```
 Note```
 
