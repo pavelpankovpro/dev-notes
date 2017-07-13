@@ -23,7 +23,7 @@ resources:
     password: ((docker-hub-password))
 ```
 
-3) Define a job with name build-docker-image
+3) Defines a job with name `build-docker-image`
 ```yml
 jobs:
 - name: build-docker-image
