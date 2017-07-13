@@ -1,0 +1,23 @@
+---
+resources:
+- name: project-git
+  type: git
+  source:
+    uri: path/to/git/repo
+    branch: master
+    private_key: ((project-git-key))
+
+- name: project-docker-image
+  type: docker-image
+  source:
+    repository: dockerhub/repo
+    username: ((docker-hub-username))
+    password: ((docker-hub-password))
+
+jobs:
+- name: build-docker-image
+  plan:
+  - get: project-git
+    trigger: true
+  - put: project-docker-image
+    params: {build: project-git/path/to/dockerfile/dir}
