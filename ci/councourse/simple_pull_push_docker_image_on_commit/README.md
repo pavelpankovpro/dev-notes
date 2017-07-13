@@ -49,3 +49,11 @@ and will upload our image using our `project-docker-image` resource to docker hu
 ```yml
 - put: project-docker-image
 ```
+
+The `credentials.yml` file is used to store the docker hub username and password and ssh private key or any other information that you need to be separated from the main pipeline configuration file.
+
+To set the pipeline using the configuration file use:
+```bash
+fly -t target_name set-pipeline --config pipeline.yml --pipeline pipeline_name --load-vars-from credentials.yml
+```
+
