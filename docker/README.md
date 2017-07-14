@@ -60,6 +60,20 @@ docker volume ls -f dangling=true # list dangling volumes
 docker volume rm $(docker volume ls -f dangling=true -q) # remove all dangling volumes
 ```
 
+Docker network
+```
+docker network ls # list all networks
+
+```
+
+Docker cleanup commands
+```
+docker rmi $(docker images -f dangling=true -q)
+docker rm $(docker ps -a -f status=exited -q)
+docker volume rm $(docker volume ls -f dangling=true -q) 
+docker network prune
+```
+
 Docker compose commands
 ```
 docker-compose stop [service_name]
