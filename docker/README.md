@@ -27,6 +27,7 @@ Docker commands
 ```
 docker build -t tag_name:version path/to/Dockerfile
 docker build -t localhost:5050/image_name:version path/to/Dockerfile # if we use local docker repository
+docker run -d --name web -v /src/webapp:/webapp training/webapp python
 docker image pull ubuntu:latest
 dokcer image push tag_name:version
 docker image remove tag_name:version
