@@ -9,17 +9,19 @@ run server
 python manage.py runserver
 ```
 
-admin -> create project
-```
-django-admin startproject mysite
-```
-
 admin -> create super user
 ```
 python manage.py createsuperuser
 ```
 
-create new app within project
+django cli commands
 ```
-python manage.py startapp polls
+./manage.py startapp polls # create app within project
+```
+
+django admin
+```
+django-admin startproject mysite # create project
+django-admin dumpdata db.json # dump all data from db
+django-admin loaddata db.json # import all data from file
 ```
