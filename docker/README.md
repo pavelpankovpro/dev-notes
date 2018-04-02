@@ -75,6 +75,11 @@ docker volume rm $(docker volume ls -f dangling=true -q)
 docker network prune
 ```
 
+**DANGER** these will delete all not only dangling
+```
+docker rmi $(docker images -a -q)
+```
+
 Docker compose commands
 ```
 docker-compose stop [service_name]
